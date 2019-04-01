@@ -6,9 +6,9 @@ public class LocationController : MonoBehaviour
 {
     public bool isRelaxing;
     public bool isFulfillment;
-    public int energyReplenish;//only relaxing act
-    public int fulfillmentReplensh;// only fulfillment act
-    public int energyConsumption;
+    public float energyReplenish;//only relaxing act
+    public float fulfillmentReplensh;// only fulfillment act
+    public float energyConsumption;
     //Finishing time
     public float finishTime = 5.0f;
     public LocationManager locationManager;

@@ -4,12 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 public class LocationManager : MonoBehaviour
 {
-    public int initialEnergy = 10;
-    public int initialFulfillment = 10;
+    public float initialEnergy = 10;
+    public float initialFulfillment = 10;
     public Text energyText;
     public Text fulfillmentText;
-    private int playerEnergy;
-    private int playerFulfillment;
+    public float decreaseSpeed = 0.02f;
+    private float playerEnergy;
+    private float playerFulfillment;
     
     // Start is called before the first frame update
     void Start()
@@ -23,8 +24,10 @@ public class LocationManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        energyText.text = playerEnergy.ToString();
-        fulfillmentText.text = playerFulfillment.ToString();
+        playerFulfillment -= decreaseSpeed * Time.deltaTime;
+       
+        energyText.text = playerEnergy.ToString("f2");
+        fulfillmentText.text = playerFulfillment.ToString("f2");
         //Fullfillment will decrease with time
 
         //Energy runs out -> do relaxing activities
@@ -32,11 +35,11 @@ public class LocationManager : MonoBehaviour
         //Fulfillment runs out - day ends
 
     }
-    public void FinishRelaxingActivities(int energy)
+    public void FinishRelaxingActivities(float energy)
     {
         playerEnergy += energy;
     }
-    public void FinishFulfillmentActivities(int consumeEnergy, int fulfillment)
+    public void FinishFulfillmentActivities(float consumeEnergy, float fulfillment)
     {
         playerFulfillment += fulfillment;
         playerEnergy -= consumeEnergy;
