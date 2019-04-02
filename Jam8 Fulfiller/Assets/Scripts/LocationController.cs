@@ -10,7 +10,7 @@ public class LocationController : MonoBehaviour
     public float fulfillmentReplensh;// only fulfillment act
     public float energyConsumption;
     //Finishing time
-    public float finishTime = 5.0f;
+    public float finishTime = 6.0f;
     public LocationManager locationManager;
     public Transform timeBarLength;
 

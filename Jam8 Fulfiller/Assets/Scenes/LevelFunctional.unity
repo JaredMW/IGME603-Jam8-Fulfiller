@@ -3245,7 +3245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startActivated: 1
-  lengthOfDay: 5
+  lengthOfDay: 38
   lightColorOverTime:
     serializedVersion: 2
     key0: {r: 0.9150943, g: 0.6642639, b: 0.5222944, a: 1}
@@ -3461,6 +3461,16 @@ PrefabInstance:
         type: 3}
       propertyPath: isFulfillment
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 873581220378383432, guid: d747eff0bb9e07c489ca0a2cc54feb80,
+        type: 3}
+      propertyPath: finishTime
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 873581220378383432, guid: d747eff0bb9e07c489ca0a2cc54feb80,
+        type: 3}
+      propertyPath: fulfillmentReplensh
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 873581220378383436, guid: d747eff0bb9e07c489ca0a2cc54feb80,
         type: 3}
@@ -35639,6 +35649,16 @@ PrefabInstance:
       propertyPath: isFulfillment
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 873581220378383432, guid: d747eff0bb9e07c489ca0a2cc54feb80,
+        type: 3}
+      propertyPath: finishTime
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 873581220378383432, guid: d747eff0bb9e07c489ca0a2cc54feb80,
+        type: 3}
+      propertyPath: fulfillmentReplensh
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 873581220378383436, guid: d747eff0bb9e07c489ca0a2cc54feb80,
         type: 3}
       propertyPath: m_Color.r
@@ -35803,6 +35823,16 @@ PrefabInstance:
         type: 3}
       propertyPath: isRelaxing
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 873581220378383432, guid: d747eff0bb9e07c489ca0a2cc54feb80,
+        type: 3}
+      propertyPath: energyReplenish
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 873581220378383432, guid: d747eff0bb9e07c489ca0a2cc54feb80,
+        type: 3}
+      propertyPath: finishTime
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d747eff0bb9e07c489ca0a2cc54feb80, type: 3}
@@ -37513,6 +37543,21 @@ PrefabInstance:
       propertyPath: fulfillmentText
       value: 
       objectReference: {fileID: 932004310}
+    - target: {fileID: 8562450642281029043, guid: d781225e40d64614b9ab62434ff9e1ce,
+        type: 3}
+      propertyPath: decreaseSpeed
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562450642281029043, guid: d781225e40d64614b9ab62434ff9e1ce,
+        type: 3}
+      propertyPath: initialEnergy
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562450642281029043, guid: d781225e40d64614b9ab62434ff9e1ce,
+        type: 3}
+      propertyPath: initialFulfillment
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8562450642281029042, guid: d781225e40d64614b9ab62434ff9e1ce,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -45778,6 +45823,11 @@ PrefabInstance:
       propertyPath: isRelaxing
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 873581220378383432, guid: d747eff0bb9e07c489ca0a2cc54feb80,
+        type: 3}
+      propertyPath: finishTime
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d747eff0bb9e07c489ca0a2cc54feb80, type: 3}
 --- !u!224 &2025835305 stripped
@@ -45862,6 +45912,16 @@ PrefabInstance:
         type: 3}
       propertyPath: isRelaxing
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 873581220378383432, guid: d747eff0bb9e07c489ca0a2cc54feb80,
+        type: 3}
+      propertyPath: energyReplenish
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 873581220378383432, guid: d747eff0bb9e07c489ca0a2cc54feb80,
+        type: 3}
+      propertyPath: finishTime
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d747eff0bb9e07c489ca0a2cc54feb80, type: 3}

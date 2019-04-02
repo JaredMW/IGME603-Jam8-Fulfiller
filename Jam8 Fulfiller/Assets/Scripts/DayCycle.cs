@@ -250,6 +250,11 @@ public class DayCycle : MonoBehaviour
 
         // Update DayOver UI
         UpdateUI();
+
+        if (dayOver && Input.GetMouseButtonDown(0))
+        {
+            Application.LoadLevel("LevelFunctional");
+        }
     }
 
 

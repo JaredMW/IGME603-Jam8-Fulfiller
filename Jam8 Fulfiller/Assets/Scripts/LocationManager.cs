@@ -25,6 +25,7 @@ public class LocationManager : MonoBehaviour
     void Update()
     {
         playerFulfillment -= decreaseSpeed * Time.deltaTime;
+        playerEnergy -= decreaseSpeed * Time.deltaTime;
        
         energyText.text = playerEnergy.ToString("f2");
         fulfillmentText.text = playerFulfillment.ToString("f2");
